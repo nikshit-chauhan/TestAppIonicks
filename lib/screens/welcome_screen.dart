@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:testapp/screens/sign_in_screen.dart';
+import 'package:testapp/screens/sign_up_screen.dart';
+import 'widget/Sign_In_widget.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({Key? key});
+  const WelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 4, 1, 10),
+      backgroundColor: const Color.fromARGB(255, 32, 31, 39),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -19,7 +20,7 @@ class WelcomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const SignInScreen(),
+                    builder: (context) => const SignUpScreen(),
                   ),
                 );
               },
@@ -33,35 +34,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 25),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Already have an account?',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SignInScreen(),
-                      ),
-                    );
-                  },
-                  child: const Text(
-                    'Sign In',
-                    style: TextStyle(
-                      color: Color(0xFF390099),
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            const SignInWidget(),
           ],
         ),
       ),
