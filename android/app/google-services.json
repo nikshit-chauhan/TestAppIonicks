@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "148039212465",
+    "project_id": "test-app-ioniks",
+    "storage_bucket": "test-app-ioniks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148039212465:android:06921f0ff6aac5f261f190",
+        "android_client_info": {
+          "package_name": "com.example.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148039212465-8gu38nfouod25idbna9k1r7jeonaseab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDke1VjiYbhG-Sfe6NfFmQyZ2y6_f3QldU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148039212465-8gu38nfouod25idbna9k1r7jeonaseab.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "148039212465-0sm0iiubkkschudjdot51i87hh80r89s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
