@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testapp/screens/welcome_screen.dart';
 import 'screens/splash_screen.dart';
 
 class App extends StatelessWidget {
@@ -6,9 +7,14 @@ class App extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return const MaterialApp(
+    return MaterialApp(
+      onGenerateRoute: (settings) {
+        if (settings.name == '/welcome') {
+          return MaterialPageRoute(builder: (context) => const WelcomeScreen());
+        }
+      },
       title: 'Test Application',
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

@@ -129,11 +129,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         email: _email,
                         password: _password,
                       );
+                      User user = userCredential.user!;
                       Navigator.pushReplacement(
                         (context),
                         MaterialPageRoute(
                           builder: (context) => HomeScreen(
-                            userCredential: userCredential,
+                            user: user,
                           ),
                         ),
                       );
